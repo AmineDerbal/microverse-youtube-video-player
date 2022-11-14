@@ -4,3 +4,13 @@ body {
   margin: 0;
   height: 100vh;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
