@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 body {
@@ -24,6 +25,76 @@ body {
 
 #video-section {
   position: relative;
-  padding-bottom: 10.25%; /* 16:9 */
-  height: 50%;
+  padding-bottom: 40.25%;
+  height: 60%;
+}
+
+#video-informations {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.informations {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.additional-video {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#uplader-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+}
+
+#auhtor-section p {
+  margin-top: -1rem;
+}
+#subscribe-button {
+  background-color: rgb(15, 15, 15);
+  color: whitesmoke;
+  height: auto;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  font-weight: 600;
+}
+#date-and-views {
+  margin-bottom: -0.8rem;
+  font-weight: 800;
+}
+
+#description-section {
+  background-color: rgb(242, 242, 242);
+  padding: 0.6rem;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.suggested-video-screen {
+  width: 20rem;
+  border-radius: 0.6rem;
+  padding: 0.3rem 0;
+}
+li {
+  list-style: none;
+}
+
+#video-title {
+  width: 80%;
+}
+
+@media only screen and (max-width: 1024px) {
+  #video-informations {
+    flex-direction: column;
+    align-items: center;
+  }
 }
